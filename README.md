@@ -4,6 +4,7 @@ An example about Image Classification
 ## 17 Flower Category Database
 ----------------------------------------------
 [http://www.robots.ox.ac.uk/~vgg/data/flowers/17/](http://www.robots.ox.ac.uk/~vgg/data/flowers/17/)
+
 This set contains images of flowers belonging to 17 different categories. 
 The images were acquired by searching the web and taking pictures. There are
 80 images for each category. 
