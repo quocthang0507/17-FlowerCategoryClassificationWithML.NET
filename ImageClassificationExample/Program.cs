@@ -7,25 +7,29 @@ namespace ImageClassificationExample
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Here are some categories that the model can recognize");
-			foreach (var cat in Enum.GetValues(typeof(Category)))
+			while (true)
 			{
-				Console.WriteLine(Enum.GetName(typeof(Category), cat));
+				Console.Clear();
+				Console.WriteLine("Here are some categories that the model can recognize");
+				foreach (var cat in Enum.GetValues(typeof(Category)))
+				{
+					Console.WriteLine(Enum.GetName(typeof(Category), cat));
+				}
+
+
+				Console.Write("\nPaste the image path which want to recognize: ");
+				string source = Console.ReadLine();
+
+				ModelInput sampleData = new ModelInput()
+				{
+					ImageSource = source,
+				};
+
+				var predictionResult = ConsumeModel.Predict(sampleData);
+
+				Console.WriteLine($"ImageSource: {sampleData.ImageSource}");
+				Console.WriteLine($"\n\nPredicted Label value {predictionResult.Prediction}\n");
 			}
-
-
-			Console.Write("\nPaste the image path which want to recognize: ");
-			string source = Console.ReadLine();
-
-			ModelInput sampleData = new ModelInput()
-			{
-				ImageSource = source,
-			};
-
-			var predictionResult = ConsumeModel.Predict(sampleData);
-
-			Console.WriteLine($"ImageSource: {sampleData.ImageSource}");
-			Console.WriteLine($"\n\nPredicted Label value {predictionResult.Prediction}\n");
 			Console.WriteLine("=============== End of process, hit any key to finish ===============");
 			Console.ReadKey();
 		}
