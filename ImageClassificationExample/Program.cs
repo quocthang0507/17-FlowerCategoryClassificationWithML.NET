@@ -16,9 +16,10 @@ namespace ImageClassificationExample
 					Console.WriteLine(Enum.GetName(typeof(Category), cat));
 				}
 
-
 				Console.Write("\nPaste the image path which want to recognize: ");
 				string source = Console.ReadLine();
+				if (source.Equals("exit", StringComparison.OrdinalIgnoreCase))
+					break;
 
 				ModelInput sampleData = new ModelInput()
 				{
