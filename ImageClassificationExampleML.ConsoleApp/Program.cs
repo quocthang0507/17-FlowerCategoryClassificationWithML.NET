@@ -9,10 +9,12 @@ namespace ImageClassificationExampleML.ConsoleApp
 	{
 		static void Main(string[] args)
 		{
+			Console.Write("Image path: ");
+			string path = Console.ReadLine();
 			// Create single instance of sample data from first line of dataset for model input
 			ModelInput sampleData = new ModelInput()
 			{
-				ImageSource = @"C:\Users\quoct\Downloads\download.jfif",
+				ImageSource = path,
 			};
 
 			// Make a single prediction on the sample data and print results
