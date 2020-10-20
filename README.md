@@ -31,9 +31,10 @@ Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (2
 |Total experiment time : 3617.0667002 Secs                                                                       |
 |Total number of models explored: 1                                                                              |
 
-|                                              Top 1 models explored                                             |
-|----------------------------------------------------------------------------------------------------------------|
-| Trainer | MicroAccuracy | MacroAccuracy | Duration | #Iteration |
+## Top 1 models explored
+
+| # | Trainer | MicroAccuracy | MacroAccuracy | Duration | #Iteration |
+| --- | --- | --- | --- | --- | --- |
 |1 | ImageClassification | 0.9203 | 0.9233 | 3617.1 | 1 |
 
 ![](img/Capture-1.png)
