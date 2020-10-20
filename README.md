@@ -15,4 +15,25 @@ Nilsback, M-E. and Zisserman, A.  A Visual Vocabulary for Flower Classification.
 Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (2006) 
 [http://www.robots.ox.ac.uk/~vgg/publications/papers/nilsback06.{pdf,ps.gz}](http://www.robots.ox.ac.uk/~vgg/publications/papers/nilsback06.{pdf,ps.gz}).
 
-![17 Categories](categories.jpg)
+![17 Categories](img/categories.jpg)
+
+| ML.NET version | API type | Status| App Type | Data type | Scenario | ML Task | Algorithms |
+|----------------|-------------------|-------------------------------|-------------|-----------|---------------------|---------------------------|-----------------------------|
+| v1.5.0 | Dynamic API | up-to-date | Console app | .txt file based on .tsv file | Sentiment Analysis | Two-class  classification | Linear Classification |
+
+## Experiment Results
+
+|                                                     Summary                                                    |
+|----------------------------------------------------------------------------------------------------------------|
+|ML Task: image-classification                                                                                   |
+|Dataset: C:\Users\La Quoc Thang\AppData\Local\Temp\72cb20ad-b7c0-4bd0-9f08-d7b5ec2520b1.tsv                     |
+|Label : Label                                                                                                   |
+|Total experiment time : 3617.0667002 Secs                                                                       |
+|Total number of models explored: 1                                                                              |
+
+|                                              Top 1 models explored                                             |
+|----------------------------------------------------------------------------------------------------------------|
+| Trainer | MicroAccuracy | MacroAccuracy | Duration | #Iteration |
+|1 | ImageClassification | 0.9203 | 0.9233 | 3617.1 | 1 |
+
+![](img/Capture-1.png)
