@@ -17,9 +17,9 @@ Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (2
 
 ![17 Categories](img/categories.jpg)
 
-| ML.NET version | API type | Status| App Type | Data type | Scenario | ML Task | Algorithms |
+| ML.NET version | API type          | Status                        | App Type    | Data type | Scenario            | ML Task                   | Algorithms                  |
 |----------------|-------------------|-------------------------------|-------------|-----------|---------------------|---------------------------|-----------------------------|
-| v1.5.0 | Dynamic API | up-to-date | Console app | .txt file based on .tsv file | Sentiment Analysis | Two-class  classification | Linear Classification |
+| Microsoft.ML 1.5.0 | Dynamic API | Up-to-date | Console apps | Image files | Image classification | Image classification with TensorFlow model retrain based on transfer learning  | DNN architectures: ResNet, InceptionV3, MobileNet, etc.  |
 
 ## Experiment Results
 
