@@ -1,4 +1,4 @@
-# ImageClassificationExample
+# 17-FlowerCategoryClassificationWithML.NET
 An example about Image Classification
 
 ## 17 Flower Category Database
